@@ -10,7 +10,8 @@ def get_data():
 			'Production Order': 'production_item',
 			'Product Bundle': 'new_item_code',
 			'BOM': 'item',
-			'Batch': 'item'
+			'Batch': 'item',
+			'Item Alternatives': 'item',
 		},
 		'transactions': [
 			{
@@ -40,7 +41,7 @@ def get_data():
 			},
 			{
 				'label': _('Manufacture'),
-				'items': ['Production Order']
+				'items': ['Production Order', 'Item Alternatives']
 			}
 		]
 	}
